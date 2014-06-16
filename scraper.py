@@ -1,6 +1,5 @@
 from lxml import html
 import requests
-from urlparse import urljoin
 def scrape(url,cont=""):
     page=requests.get(url)
     tree=html.fromstring(page.text)
